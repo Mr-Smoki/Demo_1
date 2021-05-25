@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backblack"
+    tools:context=".screens.SignIn_Screen.SignIn_Screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                app:srcCompat="@drawable/worldcinematext" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/nameET"
+                style="@style/BaseET"
+                android:layout_marginTop="19dp"
+                android:hint="Имя" />
+
+            <EditText
+                android:id="@+id/surnameET"
+                style="@style/BaseET"
+                android:layout_marginTop="16dp"
+                android:hint="Фамилия" />
+
+            <EditText
+                android:id="@+id/emailET"
+                style="@style/BaseET"
+                android:layout_marginTop="16dp"
+                android:hint="E-mail" />
+
+            <EditText
+                android:id="@+id/passET"
+                style="@style/BaseET"
+                android:layout_marginTop="16dp"
+                android:hint="Пароль" />
+
+            <EditText
+                android:id="@+id/reppassET"
+                style="@style/BaseET"
+                android:layout_marginTop="20dp"
+                android:hint="Повторите пароль" />
+
+            <TextView
+                android:id="@+id/regButton"
+                style="@style/BaseET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="79dp"
+                android:background="@drawable/shape_solid"
+                android:gravity="center"
+                android:onClick="GoSignUp"
+                android:text="Зарегистрироваться"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/button"
+                style="@style/BaseET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:onClick="SignIn"
+                android:text="У меня уже есть аккаунт"
+                android:textColor="@color/purplebutton" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

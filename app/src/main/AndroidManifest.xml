@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.demo_1">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo_1">
-        <activity android:name=".MainActivity">
+        <activity android:name=".screens.ChatList_Screen.ChatList_Screen"></activity>
+        <activity android:name=".screens.Main_Screen.Main_Screen" />
+        <activity
+            android:name=".screens.Main_Screen2.Main_Screen"
+            android:label="@string/title_activity_main_screen" />
+        <activity
+            android:name=".screens.Main_Screen"
+            android:label="@string/title_activity_main_screen" />
+        <activity android:name=".screens.SignUp_Screen.SignUp_Screen" />
+        <activity android:name=".screens.SignIn_Screen.SignIn_Screen" />
+        <activity android:name=".screens.Launch_Screen.Launch_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
